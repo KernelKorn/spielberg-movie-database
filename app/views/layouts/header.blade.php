@@ -12,12 +12,12 @@
 		<nav class="navbar navbar-default" role="navigation">
         <div class="navbar-inner">
             <div class="container">
-            	<a class="navbar-brand" href="#">Spielberg's Movies</a>
+            	<a class="navbar-brand" href="/">Spielberg's Movies</a>
             	@if(!Auth::check())
                     <ul class="nav navbar-nav navbar-right">
                     	<li>
                        		<form id="searchform">
-								<input class="search form-control" type="text" placeholder="Search For Actor:"/>
+								<input class="search form-control" type="text" placeholder="Search For Actor"/>
 								<button class="btnSearch" type="button">Search</button>
 							</form>
 						</li>
@@ -25,13 +25,17 @@
                     </ul>
             	@else
                     <ul class="nav navbar-nav">
-                		<li>{{ HTML::link('admin/users', 'Users') }}</li>
-                		<li>{{ HTML::link('admin/entities', 'Entities') }}</li>
-                		<li>{{ HTML::link('admin/lists', 'Lists') }}</li>
-                        <li>{{ HTML::link('admin/pagekeywords', 'Page Keywords') }}</li>
+                		<li>{{ HTML::link('/movies', 'Movies') }}</li>
+                		<li>{{ HTML::link('/admin/actors', 'Actors') }}</li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-            		  <li>{{ HTML::link('/logout', 'Logout') }}</li>
+                    	<li>
+                       		<form id="searchform">
+								<input class="search form-control" type="text" placeholder="Search For Actor"/>
+								<button class="btnSearch" type="button">Search</button>
+							</form>
+						</li>
+            		  	<li>{{ HTML::link('/logout', 'Logout') }}</li>
                     </ul>
             	@endif
             </div>

@@ -20,4 +20,14 @@ class ActorController extends BaseController {
 			'Actors' => $Actors
 		));
 	}
+
+	public function adminIndex()
+	{
+		$Actors = Actor::orderBy('name', 'asc')->get();
+
+		return View::make('admin.actors', array(
+			'Actors' => $Actors
+		));
+	}
+
 }

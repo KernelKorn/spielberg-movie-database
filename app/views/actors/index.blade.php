@@ -14,10 +14,10 @@
 					</thead>
 					<tbody>
 						@foreach ($Actor->movies as $movie)
-						<tr>
-							<td>{{ $movie->pivot->character_name }}</td>
-							<td><a href="/movie/{{ $movie->id }}">{{ $movie->name }}</a></td>
-						</tr>
+							<tr>
+								<td>{{ $movie->pivot->character_name }}</td>
+								<td><a href="/movie/{{ $movie->id }}">{{ $movie->name }}</a></td>
+							</tr>
 						@endforeach
 					</tbody>
 				</table>
