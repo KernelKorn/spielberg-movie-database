@@ -16,4 +16,6 @@ Route::get('/', array(
 		'uses' => 'HomeController@index',
 ));
 
-Route::get('/movie/{id}', 'HomeController@movieIndex');
+Route::get('/movie/{id}', 'HomeController@index');
+Route::get('/search/{key}', 'ActorController@search');
+Route::get('/actor/{id}', 'ActorController@index');

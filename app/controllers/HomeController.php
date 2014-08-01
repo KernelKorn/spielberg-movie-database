@@ -15,22 +15,15 @@ class HomeController extends BaseController {
 	|
 	*/
 
-	public function index()
+	public function index($id = 1)
 	{
 		$Movies = Movie::with('Actors')->orderBy('name', 'asc')->get();
+		$Movie = Movie::find($id);
 
 		return View::make('index', array(
-			'Movies' => $Movies
+			'Movies' => $Movies,
+			'Movie' => $Movie
 		));
-	}
-
-	public function movieIndex($id)
-	{
-		$Movies = Movie::find($id);
-
-		return View::make('index', array(
-			'Movies' => $Movies
-		))->render();
 	}
 
 	public function showWelcome()

@@ -1,0 +1,1 @@
+function search(){var a=$(".search").val();console.log(a),$.get("/search/"+a,function(){$(".wrapper").load("/search/"+a+" #page")})}$("#searchform").on("click",".btnSearch",search);
