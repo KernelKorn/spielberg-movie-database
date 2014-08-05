@@ -6324,9 +6324,9 @@ textarea.search {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  color: #ffffff;
-  background-color: #5bc0de;
-  border-color: #46b8da;
+  color: #333333;
+  background-color: #ffffff;
+  border-color: #cccccc;
   padding: 5px 10px;
   font-size: 12px;
   line-height: 1.5;
@@ -6366,9 +6366,9 @@ fieldset[disabled] .btnSearch {
 .btnSearch:active,
 .btnSearch.active,
 .open > .dropdown-toggle.btnSearch {
-  color: #ffffff;
-  background-color: #31b0d5;
-  border-color: #269abc;
+  color: #333333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
 }
 .btnSearch:active,
 .btnSearch.active,
@@ -6390,12 +6390,12 @@ fieldset[disabled] .btnSearch:active,
 .btnSearch.disabled.active,
 .btnSearch[disabled].active,
 fieldset[disabled] .btnSearch.active {
-  background-color: #5bc0de;
-  border-color: #46b8da;
+  background-color: #ffffff;
+  border-color: #cccccc;
 }
 .btnSearch .badge {
-  color: #5bc0de;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #333333;
 }
 .table {
   border: 1px solid #dddddd;
@@ -6605,5 +6605,187 @@ fieldset[disabled] .form-signin .btnCreate.active {
 .form-signup .btnCreate .badge,
 .form-signin .btnCreate .badge {
   color: #428bca;
+  background-color: #ffffff;
+}
+.btnEdit {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #ffffff;
+  background-color: #428bca;
+  border-color: #357ebd;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.btnEdit:focus,
+.btnEdit:active:focus,
+.btnEdit.active:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.btnEdit:hover,
+.btnEdit:focus {
+  color: #333333;
+  text-decoration: none;
+}
+.btnEdit:active,
+.btnEdit.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.btnEdit.disabled,
+.btnEdit[disabled],
+fieldset[disabled] .btnEdit {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.btnEdit:hover,
+.btnEdit:focus,
+.btnEdit:active,
+.btnEdit.active,
+.open > .dropdown-toggle.btnEdit {
+  color: #ffffff;
+  background-color: #3071a9;
+  border-color: #285e8e;
+}
+.btnEdit:active,
+.btnEdit.active,
+.open > .dropdown-toggle.btnEdit {
+  background-image: none;
+}
+.btnEdit.disabled,
+.btnEdit[disabled],
+fieldset[disabled] .btnEdit,
+.btnEdit.disabled:hover,
+.btnEdit[disabled]:hover,
+fieldset[disabled] .btnEdit:hover,
+.btnEdit.disabled:focus,
+.btnEdit[disabled]:focus,
+fieldset[disabled] .btnEdit:focus,
+.btnEdit.disabled:active,
+.btnEdit[disabled]:active,
+fieldset[disabled] .btnEdit:active,
+.btnEdit.disabled.active,
+.btnEdit[disabled].active,
+fieldset[disabled] .btnEdit.active {
+  background-color: #428bca;
+  border-color: #357ebd;
+}
+.btnEdit .badge {
+  color: #428bca;
+  background-color: #ffffff;
+}
+.btnDelete {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #ffffff;
+  background-color: #d9534f;
+  border-color: #d43f3a;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.btnDelete:focus,
+.btnDelete:active:focus,
+.btnDelete.active:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.btnDelete:hover,
+.btnDelete:focus {
+  color: #333333;
+  text-decoration: none;
+}
+.btnDelete:active,
+.btnDelete.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.btnDelete.disabled,
+.btnDelete[disabled],
+fieldset[disabled] .btnDelete {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.btnDelete:hover,
+.btnDelete:focus,
+.btnDelete:active,
+.btnDelete.active,
+.open > .dropdown-toggle.btnDelete {
+  color: #ffffff;
+  background-color: #c9302c;
+  border-color: #ac2925;
+}
+.btnDelete:active,
+.btnDelete.active,
+.open > .dropdown-toggle.btnDelete {
+  background-image: none;
+}
+.btnDelete.disabled,
+.btnDelete[disabled],
+fieldset[disabled] .btnDelete,
+.btnDelete.disabled:hover,
+.btnDelete[disabled]:hover,
+fieldset[disabled] .btnDelete:hover,
+.btnDelete.disabled:focus,
+.btnDelete[disabled]:focus,
+fieldset[disabled] .btnDelete:focus,
+.btnDelete.disabled:active,
+.btnDelete[disabled]:active,
+fieldset[disabled] .btnDelete:active,
+.btnDelete.disabled.active,
+.btnDelete[disabled].active,
+fieldset[disabled] .btnDelete.active {
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+.btnDelete .badge {
+  color: #d9534f;
   background-color: #ffffff;
 }

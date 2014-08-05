@@ -24,3 +24,4 @@ Route::post('/login', 'UserController@login');
 Route::get('/logout', 'UserController@logout');
 
 Route::get('/admin/actors', 'ActorController@adminIndex');
+Route::get('/admin/actors/edit/{id}', 'ActorController@edit');

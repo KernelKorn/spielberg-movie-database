@@ -1,1 +1,1 @@
-function search(){var a=$(".search").val();console.log(a),$.get("/search/"+a,function(){$(".wrapper").load("/search/"+a+" #page")})}$("#searchform").on("click",".btnSearch",search);
+$(document).ready(function(){function a(){var a=$(".search").val();$.get("/search/"+a,function(){$(".wrapper").load("/search/"+a+" #page")})}function n(){var a=$(this).parent().parent(),n=a.data("id");$.get("/admin/actors/edit/"+n,function(a){$("body").append(a),$("#myModal").modal("show")})}$("#searchform").on("click",".btnSearch",a),$("#content").on("click",".btnEdit",n)});
