@@ -25,7 +25,7 @@
                     </ul>
             	@else
                     <ul class="nav navbar-nav">
-                		<li>{{ HTML::link('/movies', 'Movies') }}</li>
+                		<li>{{ HTML::link('/admin/movies', 'Movies') }}</li>
                 		<li>{{ HTML::link('/admin/actors', 'Actors') }}</li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
@@ -46,7 +46,6 @@
 		</div><!--/#wrapper -->
 
 		<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-		<script src="/js/actor.js" type="text/javascript"></script>
 		<script src="/vendor/bootstrap/js/modal.js"></script>
 		@yield('js')
 

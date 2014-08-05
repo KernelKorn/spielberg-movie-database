@@ -14,5 +14,7 @@
 		{{ Form::submit('Login', array('class' => 'btnCreate')) }}
 	</div>
 
+	<a href="/password/remind">Reset Password</a>
+
 {{ Form::close() }}
 @stop

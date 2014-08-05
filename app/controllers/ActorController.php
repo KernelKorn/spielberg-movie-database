@@ -34,7 +34,7 @@ class ActorController extends BaseController {
 	{
 		$Actor = Actor::find($id);
 
-		return View::make('admin.editModal', array(
+		return View::make('admin.actorModal', array(
 			'Actor' => $Actor
 		))->render();
 	}

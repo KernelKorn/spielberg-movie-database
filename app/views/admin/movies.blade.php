@@ -3,19 +3,19 @@
 @section('content')
 	<div id="content">
 		<div class="jumbotron text-center">
-			<h2>Actors Table</h2>
+			<h2>Movies Table</h2>
 		</div>
 		<table class="table">
 			<thead>
 				<tr>
-					<th>Actor Name</th>
+					<th>Movie</th>
 					<th>Actions</th>
 				</tr>
 			</thead>
 			<tbody>
-				@foreach ($Actors as $actor)
-					<tr data-id='{{ $actor->id }}'>
-						<td>{{ $actor->name }}</td>
+				@foreach ($Movies as $movie)
+					<tr data-id='{{ $movie->id }}'>
+						<td>{{ $movie->name }}</td>
 						<td>
 							<button class="btnDelete" type="button">X</button>
 							<button class="btnEdit" type="button">Edit</button>
@@ -32,5 +32,5 @@
 @stop
 
 @section('js')
-	<script src="/js/actor.js" type="text/javascript"></script>
+	<script src="/js/movie.js" type="text/javascript"></script>
 @stop

@@ -18,12 +18,8 @@ $(document).ready(function(){
 		var par = $(this).parent().parent();
 		var id = par.data('id');
 
-		console.log(id);
-
 		$.get( "/admin/actors/edit/" + id, function(response){
 			$("#edit").append(response);
-			console.log(id);
-			console.log(response);
 			$("#editModal").modal('show');
 		});
     }

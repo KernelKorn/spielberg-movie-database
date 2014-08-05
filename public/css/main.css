@@ -6422,12 +6422,14 @@ iframe {
   margin-left: 25%;
 }
 .form-signup,
-.form-signin {
+.form-signin,
+.form-reset {
   width: 400px;
   margin: 0 auto;
 }
 .form-signup .forms,
-.form-signin .forms {
+.form-signin .forms,
+.form-reset .forms {
   display: block;
   width: 100%;
   height: 34px;
@@ -6446,41 +6448,50 @@ iframe {
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 .form-signup .forms:focus,
-.form-signin .forms:focus {
+.form-signin .forms:focus,
+.form-reset .forms:focus {
   border-color: #66afe9;
   outline: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
 }
 .form-signup .forms::-moz-placeholder,
-.form-signin .forms::-moz-placeholder {
+.form-signin .forms::-moz-placeholder,
+.form-reset .forms::-moz-placeholder {
   color: #777777;
   opacity: 1;
 }
 .form-signup .forms:-ms-input-placeholder,
-.form-signin .forms:-ms-input-placeholder {
+.form-signin .forms:-ms-input-placeholder,
+.form-reset .forms:-ms-input-placeholder {
   color: #777777;
 }
 .form-signup .forms::-webkit-input-placeholder,
-.form-signin .forms::-webkit-input-placeholder {
+.form-signin .forms::-webkit-input-placeholder,
+.form-reset .forms::-webkit-input-placeholder {
   color: #777777;
 }
 .form-signup .forms[disabled],
 .form-signin .forms[disabled],
+.form-reset .forms[disabled],
 .form-signup .forms[readonly],
 .form-signin .forms[readonly],
+.form-reset .forms[readonly],
 fieldset[disabled] .form-signup .forms,
-fieldset[disabled] .form-signin .forms {
+fieldset[disabled] .form-signin .forms,
+fieldset[disabled] .form-reset .forms {
   cursor: not-allowed;
   background-color: #eeeeee;
   opacity: 1;
 }
 textarea.form-signup .forms,
-textarea.form-signin .forms {
+textarea.form-signin .forms,
+textarea.form-reset .forms {
   height: auto;
 }
 .form-signup .btnCreate,
-.form-signin .btnCreate {
+.form-signin .btnCreate,
+.form-reset .btnCreate {
   display: inline-block;
   margin-bottom: 0;
   font-weight: normal;
@@ -6510,25 +6521,32 @@ textarea.form-signin .forms {
 }
 .form-signup .btnCreate:focus,
 .form-signin .btnCreate:focus,
+.form-reset .btnCreate:focus,
 .form-signup .btnCreate:active:focus,
 .form-signin .btnCreate:active:focus,
+.form-reset .btnCreate:active:focus,
 .form-signup .btnCreate.active:focus,
-.form-signin .btnCreate.active:focus {
+.form-signin .btnCreate.active:focus,
+.form-reset .btnCreate.active:focus {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
 .form-signup .btnCreate:hover,
 .form-signin .btnCreate:hover,
+.form-reset .btnCreate:hover,
 .form-signup .btnCreate:focus,
-.form-signin .btnCreate:focus {
+.form-signin .btnCreate:focus,
+.form-reset .btnCreate:focus {
   color: #333333;
   text-decoration: none;
 }
 .form-signup .btnCreate:active,
 .form-signin .btnCreate:active,
+.form-reset .btnCreate:active,
 .form-signup .btnCreate.active,
-.form-signin .btnCreate.active {
+.form-signin .btnCreate.active,
+.form-reset .btnCreate.active {
   outline: 0;
   background-image: none;
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
@@ -6536,10 +6554,13 @@ textarea.form-signin .forms {
 }
 .form-signup .btnCreate.disabled,
 .form-signin .btnCreate.disabled,
+.form-reset .btnCreate.disabled,
 .form-signup .btnCreate[disabled],
 .form-signin .btnCreate[disabled],
+.form-reset .btnCreate[disabled],
 fieldset[disabled] .form-signup .btnCreate,
-fieldset[disabled] .form-signin .btnCreate {
+fieldset[disabled] .form-signin .btnCreate,
+fieldset[disabled] .form-reset .btnCreate {
   cursor: not-allowed;
   pointer-events: none;
   opacity: 0.65;
@@ -6549,62 +6570,395 @@ fieldset[disabled] .form-signin .btnCreate {
 }
 .form-signup .btnCreate:hover,
 .form-signin .btnCreate:hover,
+.form-reset .btnCreate:hover,
 .form-signup .btnCreate:focus,
 .form-signin .btnCreate:focus,
+.form-reset .btnCreate:focus,
 .form-signup .btnCreate:active,
 .form-signin .btnCreate:active,
+.form-reset .btnCreate:active,
 .form-signup .btnCreate.active,
 .form-signin .btnCreate.active,
+.form-reset .btnCreate.active,
 .open > .dropdown-toggle.form-signup .btnCreate,
-.open > .dropdown-toggle.form-signin .btnCreate {
+.open > .dropdown-toggle.form-signin .btnCreate,
+.open > .dropdown-toggle.form-reset .btnCreate {
   color: #ffffff;
   background-color: #3071a9;
   border-color: #285e8e;
 }
 .form-signup .btnCreate:active,
 .form-signin .btnCreate:active,
+.form-reset .btnCreate:active,
 .form-signup .btnCreate.active,
 .form-signin .btnCreate.active,
+.form-reset .btnCreate.active,
 .open > .dropdown-toggle.form-signup .btnCreate,
-.open > .dropdown-toggle.form-signin .btnCreate {
+.open > .dropdown-toggle.form-signin .btnCreate,
+.open > .dropdown-toggle.form-reset .btnCreate {
   background-image: none;
 }
 .form-signup .btnCreate.disabled,
 .form-signin .btnCreate.disabled,
+.form-reset .btnCreate.disabled,
 .form-signup .btnCreate[disabled],
 .form-signin .btnCreate[disabled],
+.form-reset .btnCreate[disabled],
 fieldset[disabled] .form-signup .btnCreate,
 fieldset[disabled] .form-signin .btnCreate,
+fieldset[disabled] .form-reset .btnCreate,
 .form-signup .btnCreate.disabled:hover,
 .form-signin .btnCreate.disabled:hover,
+.form-reset .btnCreate.disabled:hover,
 .form-signup .btnCreate[disabled]:hover,
 .form-signin .btnCreate[disabled]:hover,
+.form-reset .btnCreate[disabled]:hover,
 fieldset[disabled] .form-signup .btnCreate:hover,
 fieldset[disabled] .form-signin .btnCreate:hover,
+fieldset[disabled] .form-reset .btnCreate:hover,
 .form-signup .btnCreate.disabled:focus,
 .form-signin .btnCreate.disabled:focus,
+.form-reset .btnCreate.disabled:focus,
 .form-signup .btnCreate[disabled]:focus,
 .form-signin .btnCreate[disabled]:focus,
+.form-reset .btnCreate[disabled]:focus,
 fieldset[disabled] .form-signup .btnCreate:focus,
 fieldset[disabled] .form-signin .btnCreate:focus,
+fieldset[disabled] .form-reset .btnCreate:focus,
 .form-signup .btnCreate.disabled:active,
 .form-signin .btnCreate.disabled:active,
+.form-reset .btnCreate.disabled:active,
 .form-signup .btnCreate[disabled]:active,
 .form-signin .btnCreate[disabled]:active,
+.form-reset .btnCreate[disabled]:active,
 fieldset[disabled] .form-signup .btnCreate:active,
 fieldset[disabled] .form-signin .btnCreate:active,
+fieldset[disabled] .form-reset .btnCreate:active,
 .form-signup .btnCreate.disabled.active,
 .form-signin .btnCreate.disabled.active,
+.form-reset .btnCreate.disabled.active,
 .form-signup .btnCreate[disabled].active,
 .form-signin .btnCreate[disabled].active,
+.form-reset .btnCreate[disabled].active,
 fieldset[disabled] .form-signup .btnCreate.active,
-fieldset[disabled] .form-signin .btnCreate.active {
+fieldset[disabled] .form-signin .btnCreate.active,
+fieldset[disabled] .form-reset .btnCreate.active {
   background-color: #428bca;
   border-color: #357ebd;
 }
 .form-signup .btnCreate .badge,
-.form-signin .btnCreate .badge {
+.form-signin .btnCreate .badge,
+.form-reset .btnCreate .badge {
   color: #428bca;
+  background-color: #ffffff;
+}
+#edit .forms {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555555;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+#edit .forms:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+#edit .forms::-moz-placeholder {
+  color: #777777;
+  opacity: 1;
+}
+#edit .forms:-ms-input-placeholder {
+  color: #777777;
+}
+#edit .forms::-webkit-input-placeholder {
+  color: #777777;
+}
+#edit .forms[disabled],
+#edit .forms[readonly],
+fieldset[disabled] #edit .forms {
+  cursor: not-allowed;
+  background-color: #eeeeee;
+  opacity: 1;
+}
+textarea#edit .forms {
+  height: auto;
+}
+#edit .btnAdd {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+  color: #ffffff;
+  background-color: #428bca;
+  border-color: #357ebd;
+}
+#edit .btnAdd:focus,
+#edit .btnAdd:active:focus,
+#edit .btnAdd.active:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+#edit .btnAdd:hover,
+#edit .btnAdd:focus {
+  color: #333333;
+  text-decoration: none;
+}
+#edit .btnAdd:active,
+#edit .btnAdd.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+#edit .btnAdd.disabled,
+#edit .btnAdd[disabled],
+fieldset[disabled] #edit .btnAdd {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+#edit .btnAdd:hover,
+#edit .btnAdd:focus,
+#edit .btnAdd:active,
+#edit .btnAdd.active,
+.open > .dropdown-toggle#edit .btnAdd {
+  color: #ffffff;
+  background-color: #3071a9;
+  border-color: #285e8e;
+}
+#edit .btnAdd:active,
+#edit .btnAdd.active,
+.open > .dropdown-toggle#edit .btnAdd {
+  background-image: none;
+}
+#edit .btnAdd.disabled,
+#edit .btnAdd[disabled],
+fieldset[disabled] #edit .btnAdd,
+#edit .btnAdd.disabled:hover,
+#edit .btnAdd[disabled]:hover,
+fieldset[disabled] #edit .btnAdd:hover,
+#edit .btnAdd.disabled:focus,
+#edit .btnAdd[disabled]:focus,
+fieldset[disabled] #edit .btnAdd:focus,
+#edit .btnAdd.disabled:active,
+#edit .btnAdd[disabled]:active,
+fieldset[disabled] #edit .btnAdd:active,
+#edit .btnAdd.disabled.active,
+#edit .btnAdd[disabled].active,
+fieldset[disabled] #edit .btnAdd.active {
+  background-color: #428bca;
+  border-color: #357ebd;
+}
+#edit .btnAdd .badge {
+  color: #428bca;
+  background-color: #ffffff;
+}
+#edit .btnCancel {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #ffffff;
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+#edit .btnCancel:focus,
+#edit .btnCancel:active:focus,
+#edit .btnCancel.active:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+#edit .btnCancel:hover,
+#edit .btnCancel:focus {
+  color: #333333;
+  text-decoration: none;
+}
+#edit .btnCancel:active,
+#edit .btnCancel.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+#edit .btnCancel.disabled,
+#edit .btnCancel[disabled],
+fieldset[disabled] #edit .btnCancel {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+#edit .btnCancel:hover,
+#edit .btnCancel:focus,
+#edit .btnCancel:active,
+#edit .btnCancel.active,
+.open > .dropdown-toggle#edit .btnCancel {
+  color: #ffffff;
+  background-color: #ec971f;
+  border-color: #d58512;
+}
+#edit .btnCancel:active,
+#edit .btnCancel.active,
+.open > .dropdown-toggle#edit .btnCancel {
+  background-image: none;
+}
+#edit .btnCancel.disabled,
+#edit .btnCancel[disabled],
+fieldset[disabled] #edit .btnCancel,
+#edit .btnCancel.disabled:hover,
+#edit .btnCancel[disabled]:hover,
+fieldset[disabled] #edit .btnCancel:hover,
+#edit .btnCancel.disabled:focus,
+#edit .btnCancel[disabled]:focus,
+fieldset[disabled] #edit .btnCancel:focus,
+#edit .btnCancel.disabled:active,
+#edit .btnCancel[disabled]:active,
+fieldset[disabled] #edit .btnCancel:active,
+#edit .btnCancel.disabled.active,
+#edit .btnCancel[disabled].active,
+fieldset[disabled] #edit .btnCancel.active {
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+#edit .btnCancel .badge {
+  color: #f0ad4e;
+  background-color: #ffffff;
+}
+#edit .btnSave {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #ffffff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+#edit .btnSave:focus,
+#edit .btnSave:active:focus,
+#edit .btnSave.active:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+#edit .btnSave:hover,
+#edit .btnSave:focus {
+  color: #333333;
+  text-decoration: none;
+}
+#edit .btnSave:active,
+#edit .btnSave.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+#edit .btnSave.disabled,
+#edit .btnSave[disabled],
+fieldset[disabled] #edit .btnSave {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+#edit .btnSave:hover,
+#edit .btnSave:focus,
+#edit .btnSave:active,
+#edit .btnSave.active,
+.open > .dropdown-toggle#edit .btnSave {
+  color: #ffffff;
+  background-color: #449d44;
+  border-color: #398439;
+}
+#edit .btnSave:active,
+#edit .btnSave.active,
+.open > .dropdown-toggle#edit .btnSave {
+  background-image: none;
+}
+#edit .btnSave.disabled,
+#edit .btnSave[disabled],
+fieldset[disabled] #edit .btnSave,
+#edit .btnSave.disabled:hover,
+#edit .btnSave[disabled]:hover,
+fieldset[disabled] #edit .btnSave:hover,
+#edit .btnSave.disabled:focus,
+#edit .btnSave[disabled]:focus,
+fieldset[disabled] #edit .btnSave:focus,
+#edit .btnSave.disabled:active,
+#edit .btnSave[disabled]:active,
+fieldset[disabled] #edit .btnSave:active,
+#edit .btnSave.disabled.active,
+#edit .btnSave[disabled].active,
+fieldset[disabled] #edit .btnSave.active {
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+#edit .btnSave .badge {
+  color: #5cb85c;
   background-color: #ffffff;
 }
 .btnEdit {
