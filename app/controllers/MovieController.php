@@ -2,7 +2,7 @@
 
 class MovieController extends BaseController {
 
-public function index()
+	public function index()
 	{
 		$Movies = Movie::orderBy('name', 'asc')->get();
 

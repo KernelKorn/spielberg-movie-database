@@ -1,6 +1,9 @@
 @extends('layouts.header')
 
 @section('content')
+@if (Session::has('error'))
+    <p class="alert alert-danger">{{ Session::get('error') }}</p>
+@endif
 <form class="form-reset"action="{{ action('RemindersController@postReset') }}" method="POST">
     <input type="hidden" name="token" value="{{ $token }}">
     <div class="form-group">

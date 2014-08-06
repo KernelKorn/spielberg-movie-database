@@ -2,9 +2,8 @@
 
 @section('content')
 	<div id="content">
-		<div class="jumbotron text-center">
-			<h2>Movies Table</h2>
-		</div>
+		<h2>Movies Table</h2>
+
 		<table class="table">
 			<thead>
 				<tr>

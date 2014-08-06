@@ -42,6 +42,9 @@
         </div>
     </nav>
 		<div class="wrapper">
+			@if(Session::has('message'))
+            	<p class="alert alert-warning">{{ Session::get('message') }}</p>
+        	@endif
 			@yield('content')
 		</div><!--/#wrapper -->
 

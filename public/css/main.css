@@ -6805,9 +6805,9 @@ fieldset[disabled] #edit .btnAdd.active {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  color: #ffffff;
-  background-color: #f0ad4e;
-  border-color: #eea236;
+  color: #333333;
+  background-color: #ffffff;
+  border-color: #cccccc;
 }
 #edit .btnCancel:focus,
 #edit .btnCancel:active:focus,
@@ -6843,9 +6843,9 @@ fieldset[disabled] #edit .btnCancel {
 #edit .btnCancel:active,
 #edit .btnCancel.active,
 .open > .dropdown-toggle#edit .btnCancel {
-  color: #ffffff;
-  background-color: #ec971f;
-  border-color: #d58512;
+  color: #333333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
 }
 #edit .btnCancel:active,
 #edit .btnCancel.active,
@@ -6867,12 +6867,12 @@ fieldset[disabled] #edit .btnCancel:active,
 #edit .btnCancel.disabled.active,
 #edit .btnCancel[disabled].active,
 fieldset[disabled] #edit .btnCancel.active {
-  background-color: #f0ad4e;
-  border-color: #eea236;
+  background-color: #ffffff;
+  border-color: #cccccc;
 }
 #edit .btnCancel .badge {
-  color: #f0ad4e;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #333333;
 }
 #edit .btnSave {
   display: inline-block;
